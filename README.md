@@ -8,3 +8,7 @@
 * HP - машина на которой установлен Hyper-V
 * Ubuntu18 - Виртуальная машина на которой будет разворачиватся KVM
 * MacHost - Виртуальная машина MacOS Mojave или Catalina 
+
+# Ссылки
+https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/nested-virtualization
+
