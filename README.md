@@ -8,7 +8,7 @@
 
 ## Сокращения
 * HP - машина на которой установлен Hyper-V
-* Ubuntu18 - Виртуальная машина на которой будет разворачиватся KVM
+* Ubuntu18 - Виртуальная машина на которой будет разворачиваться KVM
 * MacHost - Виртуальная машина MacOS Mojave или Catalina 
 
 ## Ограничения
@@ -22,7 +22,7 @@
 Создайте виртуальную машину со следующими параметрами
 1. Количество процессоров 4
 2. Поколение 2
-3. Количество памяи 8192 Мб
+3. Количество памяти 8192 Мб
 4. Размер жесткого диска 80 - 127 Гб
 
 Все остальные параметры выберите по своему усмотрению
@@ -38,13 +38,13 @@ Set-VMProcessor -VMName Ubuntu18 -ExposeVirtualizationExtensions $true
 ```
 
 
-Установка переменных, добавьте  следующую строку в файл **/etc/modprobe.d/kvm.conf**
+Установка переменных, добавьте следующую строку в файл **/etc/modprobe.d/kvm.conf**
 ```sh
 # /etc/modprobe.d/kvm.conf
 echo 1 > /sys/module/kvm/parameters/ignore_msrs
 ```
 
-Установка переменных, добавьте  следующую строку в файл **/etc/sysctl.conf**
+Установка переменных, добавьте следующую строку в файл **/etc/sysctl.conf**
 ```sh
 # /etc/sysctl.conf
 net.ipv4.ip_forward=1
@@ -74,7 +74,7 @@ cd OSX-KVM
 dmg2img BaseSystem.dmg BaseSystem.img
 ```
 
-Создаете диск для виртуалки
+Создаете диск для виртуальной машины
 ```<language>
 qemu-img create -f qcow2 mac_hdd_ng.img 128G
 ```
@@ -96,7 +96,7 @@ virsh net-autostart default
 ```
 
 
-Итак  все готово для установки. 
+Итак, все готово для установки. 
 
 Отредактируйте скрипт **boot-macOS-NG.sh** задав значения для памяти сменив **-m 3072** **-m 8192** в противном случае вы будете ждать очень долго!
 Запускайте консоль
@@ -106,9 +106,9 @@ virsh net-autostart default
 ```
 После этого процесс установки пройдет в штатном режиме. 
 
-# Шаги после инсталяции
+# Шаги после инсталляции
 
-## Установка Clever на  загрузочный диск
+## Установка Clover на  загрузочный диск
 См. https://artem.services/?p=722
 ## Автостарт виртуальной машины
  В процессе
@@ -122,4 +122,5 @@ virsh net-autostart default
 1. https://github.com/kholia/OSX-KVM
 2. https://artem.services/?p=722
 3. https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/nested-virtualization
+
 
