@@ -64,7 +64,7 @@ cd OSX-KVM
 ```
 
 Получение образа
-```<language>
+```sh
 ./fetch-macOS.py
 ```
 Выбираете подходящий, я использовал Mojave
