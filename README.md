@@ -1,6 +1,8 @@
 # MacOSMojaveOnHyper-V
 Установка MacOS Mojave или Catalina на Hyper-V
 
+# To english speking 
+My English-speaking friends, if you need a translation, write me an email koroten@ya.ru  or create issues
 # Цель
 Установка MacOS Mojave или Catalina гипервизор Hyper-V и запуск в полностью автоматическом режиме с доступностью хоста из внутренней сети. 
 Так как основная цель сборка приложений, то мы не учитываем работу с графической подсистемой. Работает сносно, но для постоянной работы лучше купить железо.
